@@ -41,7 +41,7 @@ mandelbrot.exe -t 2
 ### Colour List [-c]
 All of the numbers passed have to be unsigned integers.<br>
 ```
-mandelbrot.exe -c [red] [green] [blue] [threshold]<br><br>
+mandelbrot.exe -c [red] [green] [blue] [threshold]
 ```
 If i want to pass more than one colours I can do that like described below. <br>
 ```
