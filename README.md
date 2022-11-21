@@ -9,24 +9,34 @@ g++ -g -o mandelbrot.exe main.cpp src\mandelbrot.cpp
 ## Arguments
 [executable] [picturename] [[option1] [arguments1] [option2] [arguments2] ...]<br>
 
+```
 mandelbrot.exe pic.bmp -u -2.0 1.75 -l 1.5 -1.75 -r 100 100 -c 255 255 255 1 0 0 0 0 255 255 255 60 -t 4
+```
 ### Upper left point [-u]
 The upper left point is a complex number with two arguments which have the datatype double. 
 The first one is the real and the second one is the imaginary number. <br>
+```
 mandelbrot.exe -u -2.0 1.75 
+```
 
 ### Lower right point [-l]
 Same as the upper left point. <br>
+```
 mandelbrot.exe -l 2.0 -1.75 
+```
 
 ### Resolution [-r]
 The resolution has two arguments with unsigned numbers. 
 The first one defines the height and the second one defines the width. <br>
+```
 mandelbrot.exe -r 100 100 
+```
 
 ### Number of threads to start [-t]
 The number of threads has only one unsigned argument. <br>
+```
 mandelbrot.exe -t 2
+```
 
 ### Colour List [-c]
 All of the numbers passed have to be unsigned integers.<br>
