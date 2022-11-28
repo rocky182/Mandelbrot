@@ -228,12 +228,10 @@ unsigned int mandelbrot::numb2Inf(complex<double> c, unsigned long max){
     unsigned int cnt = 0;
     complex<double> z = complex<double>(0.0 + 0.0i) + c;
     double zabs = abs(z);
+
     for(; (cnt < max) && (zabs != INFINITY) && (zabs > 0.0001); zabs = abs(z), cnt++){
-        z = pow(z, 2) + c;
+        z = z * z + c;
     }
-    if(zabs >= 1){
-        return cnt;
-    }else {
-        return -cnt;
-    }
+
+    return cnt;
 }
